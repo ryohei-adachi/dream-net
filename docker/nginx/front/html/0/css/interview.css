@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+   line-height: 1;
+}
+
+.back {
+    background-color:rgb(75, 75, 182);
+    z-index: 3;
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 1240px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 4;
+    position: relative;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.gnav {
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+.detail-pagehead {
+    display: flex;
+    margin: 5px auto 0;
+    padding: 0 9.375%;
+    flex-direction: column-reverse;
+}
+
+.pagettl {
+    position:absolute;
+    z-index: 2;
+    background: darkblue;
+    color: white;
+    display: block;
+    width: 55%;
+    box-sizing: border-box;
+    letter-spacing: .02em;
+
+}
+
+time {
+    display: block;
+    font-size: 20px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    z-index: 1;
+}
+
+figure img {
+    vertical-align: bottom;
+    width: 1025px;
+    height: 1000px;
+}
+
+.icon {
+    margin-left: 10px;
+    color: orange;
+    font-size: 30px;
+}
+.sns {
+    margin-right: 10px;
+    color: black;
+}
+
+.sns img {
+    width: 75px;
+    height: 75px;
+}
+
+.interview img {
+    margin: 200px 120px 120px;
+    display: block;
+    width: 1010px;
+    height: 690px;
+
+}
+
+.interview h2 {
+    font-size: 28px;
+    margin: 0px 120px 100px;
+}
+
+.interview h3 {
+    font-size: 20px;
+    margin: 0px 120px 70px;
+    color: rgb(88, 86, 86);
+}
+
+.interview p {
+    margin: 0px 120px 0px;
+    font-size: 20px;
+}
+
+
+.footer {
+    background: darkblue;
+}
+
+.page-top {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.page-top a:link {
+    color: white;
+}
+
+.page-top a:visited {
+    color: white;
+}
+
+.page-top a:hover {
+    color: red;
+}
+
+
+.footer .inner {
+    padding: 30px;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        height: 70vh;
+    }
+
+   .detail-pagehead {
+        
+        padding: 3.5% 3.5%;
+    }
+   
+   .pagettl {
+        margin-left: 30;
+        position: relative;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .interview img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+
+    .interview h2 {
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+
+    .interview h3 {
+        font-size: 18px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+
+    .interview p {
+        font-size: 18px;
+        margin-left: 3px;
+        margin-right: 5px;
+        overflow-wrap: break-word;
+    }
+
+    .footer {
+        padding: 20px 0;
+
+    }
+
+    .back {
+        background-color:initial;
+        z-index: initial;
+        position: initial;
+        height: initial;
+    }
+    
+    .container {
+        height: initial;
+        width: initial;
+        margin: initial;
+        overflow: hidden;
+    }
+    .back {
+        height: 0%;
+    }
+}
